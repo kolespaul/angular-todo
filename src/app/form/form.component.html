@@ -1,0 +1,27 @@
+<ng-template appRef></ng-template>
+
+<section class="head-section">
+  <h1 class="title">Todos</h1>
+</section>
+
+<section class="form-section">
+  <div class="container">
+
+    <form [formGroup]="form">
+      <h2>New todo</h2>
+      <div class="field">
+        <div class="control">
+          <button class="btn" type="button">&#8661;</button>
+          <input type="text"
+                 class="input"
+                 placeholder="new todo..."
+                 formControlName="symbols"
+                 [disabled]="form.invalid">
+          <button class="btn" type="submit" (click)="submit()">Add</button>
+          <button class="btn" type="button" (click)="showModal()">+</button>
+          <div class="validation"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

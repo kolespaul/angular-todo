@@ -1,0 +1,20 @@
+<section class="todos-section">
+  <div class="container">
+    <div class="todos-list">
+
+      <div class="todo-item">
+        <input type="checkbox">
+        <div class="todo-text">{{todo.text}}</div>
+        <small class="creation-date">{{todo.creationDate | date: 'dd.mm.yyyy'}}</small>
+        <small class="expiration-date">{{todo.expirationDate | date: 'dd.mm.yyyy'}}</small>
+        <button class="btn" type="button">&#10006;</button>
+        <button class="btn" type="button">&#9998;</button>
+      </div>
+
+    </div>
+    <button class="btn" type="button">All</button>
+    <button class="btn" type="button">Actual</button>
+    <button class="btn" type="button">Completed</button>
+    <button class="btn" type="button">Clear completed</button>
+  </div>
+</section>
